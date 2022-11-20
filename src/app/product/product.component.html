@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let p of products">
+    
+            <div class="card" style="width:22rem;">
+                <img src={{p.picture}} class="card-img-top" >
+                <div class="card-body">
+                  <a  style="text-align: center; ">
+                  <h5 class="card-title">{{p.title}}</h5>
+                  <p class="card-text">Price : {{p.price}}</p>
+                  <p class="card-text">Quantity : {{p.quantity}}</p> 
+                  <p class="card-text">Like : {{p.like}}</p><br>
+                  </a>
+                <p style="display: flex; justify-content: center; margin-top:-20px;">
+                  <Button class="btn btn-primary btn-lg" style="background-color:rgb(93, 177, 24); border-color:rgb(93, 177, 24) ;" c (click)="Buy(p.id)" [disabled]="p.quantity==0 ">   buy   </Button>&nbsp;&nbsp;&nbsp;
+                  <Button class="btn btn-primary btn-lg" btn-lg active>  like  </Button>
+                </p>
+                </div>
+                </div>
+              </div>
+
+        </div>
+    </div> 
+
+
+
+
