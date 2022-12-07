@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let p of ListTodo">
+    
+            <div class="card" style="width:22rem;">
+                <div class="card-body">
+                  <a  style="text-align: center; ">
+                  <h5 class="card-title">{{p.title}}</h5>
+                  <p class="card-text">id : {{p.id}}</p>
+                  <p class="card-text">userId : {{p.userId}}</p> 
+                  <p class="card-text">completed : {{p.completed}}</p><br>
+                  </a>
+               
+            
+                </div>
+                </div>
+              </div>
+              <Button class="btn btn-primary btn-lg" style="background-color:rgb(93, 177, 24); border-color:rgb(93, 177, 24) ;" (click)="getBilan()">   Bilan  </Button>&nbsp;&nbsp;&nbsp;
+              <p class="card-text">Bilan : {{c}}</p>
+
+        </div>
+    </div> 
+
+
+
+

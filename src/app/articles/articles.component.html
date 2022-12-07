@@ -3,8 +3,8 @@
         <div  *ngFor="let a of listeArticle">
             <div *ngIf="a.categorie!='Travail'" >
             <fieldset class="border" >
-                <div >  
-                    <p >{{a.titre}}</p>
+                <div [ngStyle]="{'background-color': a.categorie=='Education' ? 'blue':'' }"> 
+                  <p >{{a.titre}}</p>
                   <p >contenu: {{a.contenu}}</p>
                   <p >auteur: {{a.auteur}}</p>
                   <p >categorie: {{a.categorie}}</p>
