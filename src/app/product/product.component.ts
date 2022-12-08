@@ -17,13 +17,13 @@ export class ProductComponent implements OnInit {
 
   ngOnInit(): void {
 //initialisation ici
-this.products=this._productService.productsList;
+//this.products=this._productService.productsList;
 
-/*this.productConsumer.getProducts().subscribe({
+this.productConsumer.getProducts().subscribe({
   next: (data)=>this.products=data, //code : 200 ,204
   error : (error)=>console.log(error),// code : 500 ,404
   complete : ()=>console.log("I m finshsing")
-})*/
+})
 }
 
 //fonction qui decremente la quantite a chaque clique sur le boutton buy
